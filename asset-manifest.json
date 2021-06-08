@@ -1,0 +1,27 @@
+{
+  "files": {
+    "app.js": "/stardom-ui/static/js/app.9cdb5c97.chunk.js",
+    "app.js.map": "/stardom-ui/static/js/app.9cdb5c97.chunk.js.map",
+    "runtime~app.js": "/stardom-ui/static/js/runtime~app.8597325e.js",
+    "runtime~app.js.map": "/stardom-ui/static/js/runtime~app.8597325e.js.map",
+    "static/js/2.dfdfed01.chunk.js": "/stardom-ui/static/js/2.dfdfed01.chunk.js",
+    "static/js/2.dfdfed01.chunk.js.map": "/stardom-ui/static/js/2.dfdfed01.chunk.js.map",
+    "fonts/Montserrat-Black.ttf": "/stardom-ui/./fonts/Montserrat-Black.ttf",
+    "fonts/Montserrat-Bold.ttf": "/stardom-ui/./fonts/Montserrat-Bold.ttf",
+    "fonts/Montserrat-Light.ttf": "/stardom-ui/./fonts/Montserrat-Light.ttf",
+    "fonts/OpenSans-Bold.ttf": "/stardom-ui/./fonts/OpenSans-Bold.ttf",
+    "fonts/OpenSans-Regular.ttf": "/stardom-ui/./fonts/OpenSans-Regular.ttf",
+    "favicon-16.png": "/stardom-ui/favicon-16.png",
+    "favicon-32.png": "/stardom-ui/favicon-32.png",
+    "favicon.ico": "/stardom-ui/favicon.ico",
+    "index.html": "/stardom-ui/index.html",
+    "manifest.json": "/stardom-ui/manifest.json",
+    "serve.json": "/stardom-ui/serve.json",
+    "static/js/2.dfdfed01.chunk.js.LICENSE.txt": "/stardom-ui/static/js/2.dfdfed01.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.8597325e.js",
+    "static/js/2.dfdfed01.chunk.js",
+    "static/js/app.9cdb5c97.chunk.js"
+  ]
+}
