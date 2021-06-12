@@ -5,6 +5,14 @@
   "name": "stardom-ui",
   "short_name": "stardom-ui",
   "start_url": "/?utm_source=web_app_manifest",
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "http://play.google.com/store/apps/details?id=io.github.pgomezponce",
+      "id": "io.github.pgomezponce"
+    }
+  ],
+  "prefer_related_applications": true,
   "icons": [
     {
       "src": "/stardom-ui/pwa/chrome-icon/chrome-icon-144.png",

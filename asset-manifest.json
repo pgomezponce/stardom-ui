@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/stardom-ui/static/js/app.475d5e0a.chunk.js",
-    "app.js.map": "/stardom-ui/static/js/app.475d5e0a.chunk.js.map",
+    "app.js": "/stardom-ui/static/js/app.a334b790.chunk.js",
+    "app.js.map": "/stardom-ui/static/js/app.a334b790.chunk.js.map",
     "runtime~app.js": "/stardom-ui/static/js/runtime~app.8597325e.js",
     "runtime~app.js.map": "/stardom-ui/static/js/runtime~app.8597325e.js.map",
-    "static/js/2.4eba97cb.chunk.js": "/stardom-ui/static/js/2.4eba97cb.chunk.js",
-    "static/js/2.4eba97cb.chunk.js.map": "/stardom-ui/static/js/2.4eba97cb.chunk.js.map",
+    "static/js/2.4ddf6a70.chunk.js": "/stardom-ui/static/js/2.4ddf6a70.chunk.js",
+    "static/js/2.4ddf6a70.chunk.js.map": "/stardom-ui/static/js/2.4ddf6a70.chunk.js.map",
     "fonts/AntDesign.ttf": "/stardom-ui/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/stardom-ui/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/stardom-ui/./fonts/Feather.ttf",
@@ -29,11 +29,11 @@
     "index.html": "/stardom-ui/index.html",
     "manifest.json": "/stardom-ui/manifest.json",
     "serve.json": "/stardom-ui/serve.json",
-    "static/js/2.4eba97cb.chunk.js.LICENSE.txt": "/stardom-ui/static/js/2.4eba97cb.chunk.js.LICENSE.txt"
+    "static/js/2.4ddf6a70.chunk.js.LICENSE.txt": "/stardom-ui/static/js/2.4ddf6a70.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.8597325e.js",
-    "static/js/2.4eba97cb.chunk.js",
-    "static/js/app.475d5e0a.chunk.js"
+    "static/js/2.4ddf6a70.chunk.js",
+    "static/js/app.a334b790.chunk.js"
   ]
 }
