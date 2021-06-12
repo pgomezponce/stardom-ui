@@ -7,66 +7,57 @@ import {brandColors, infoColors, alertColors, dangerColors, successColors} from 
 
 
 class Intern_Title extends Component {
-    styleValidator(props) {
-        let style = { fontFamily: "title", fontSize: '300%', color: brandColors['500']};
-        console.log(props);
-        if (props.bold) {
-          style = { fontFamily: "bold" };
-        }
+   
+      constructor(props) {
+        super(props);
+      }
     
-        if (props.sup) {
+      render() {
+        let style = { fontFamily: "title", fontSize: 48, color: brandColors['500'], alignSelf: 'center', textAlignVertical:'bottom'};
+        
+        if (this.props.args.light) {
+          style = { ...style, fontFamily: "lightTitle" };
+        }
+
+        if (this.props.args.sup) {
           style = {
             ...style,
-            fontSize: "65%",
+            fontSize: 12,
+            lineHeight: 40,
             textAlignVertical: "top",
             height: "100%",
             textAlign: "left",
           };
         }
     
-        if (props.sub) {
+        if (this.props.args.sub) {
           style = {
             ...style,
-            fontSize: "65%",
+            fontSize: 12,
             textAlignVertical: "bottom",
             height: "100%",
             textAlign: "left",
           };
-        }
-    
-        if (props.style !== undefined) {
-          for (const [key, value] of Object.entries(props.style)) {
-            switch (key) {
-              case "children":
-                break;
-              default:
-                style[key] = value;
-                break;
-            }
-          }
-        }
-    
-        return style;
-      }
-    
-      constructor(props) {
-        super(props);
-        this.props = props;
-        this.state = { style: this.styleValidator(props) };
-      }
-    
-      render() {
-        return <RText style={this.state.style}>{this.props.children}</RText>;
+        }    
+        return <RText style={[style, this.props.style]}>{this.props.children}</RText>;
       }
 }
 
 
 export class Title extends Component {
+  constructor(props){
+    super(props);
+  }
+
     render() {
+      let args = {}
+      args.sub = this.props.sub ? true : false;
+      args.sup = this.props.sup ? true : false;
+      args.light = this.props.light ? true : false;
+
+  
         return (
-            <View style={{borderBottomWidth:2, borderBottomColor: brandColors['500']}}>
-                <Intern_Title>{this.props.children}</Intern_Title>
-            </View>
+                <Intern_Title style={this.props.style} args={args}>{this.props.children}</Intern_Title>
         )
     }
 }
@@ -79,39 +70,40 @@ export class Heading extends Component{
             color: brandColors['500'],
 
             fontFamily:'heading',
-            fontSize:'200%',
+            fontSize:36,
             paddingLeft:16
         }
 
         if (props.h6 !== undefined) {
-            style.fontSize = '130%'
+            style.fontSize = 18
         }
 
         if (props.h5 !== undefined) {
-            style.fontSize = '160%'
+            style.fontSize = 22
         }
 
         if (props.h4 !== undefined) {
-            style.fontSize = '190%'
+            style.fontSize = 24
         }
 
         if (props.h3 !== undefined) {
-            style.fontSize = '210%'
+            style.fontSize = 28
         }
 
         if (props.h2 !== undefined) {
-            style.fontSize = '240%'
+            style.fontSize = 32
         }
 
         if (props.h1 !== undefined) {
-            style.fontSize = '270%'
+            style.fontSize = 36
         }
 
         this.state = {style: style}
     }
 
     render(){
-        console.log(this.state.style);
-        return <RText style={[this.state.style, this.props.style]}>{this.props.children}</RText>;
+        return <View style={[{borderBottomWidth:2, borderBottomColor: brandColors['500']}, this.props.containerStyle]}>
+        <RText style={[this.state.style, this.props.style]}>{this.props.children}</RText>
+        </View>;
     }
 }
